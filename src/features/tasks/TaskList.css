@@ -1,0 +1,124 @@
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.task-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid ;
+  
+}
+
+.tasks{
+  display: flex;
+  align-items: left;
+  justify-content: start;
+  background-color: #ddd;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.cont{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.task-name{
+  font-size: small;
+}
+
+.bell-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.bell-icon.low {
+  color: blue;
+}
+
+.bell-icon.medium {
+  color: yellow;
+}
+
+.bell-icon.high {
+  color: red;
+}
+
+.status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.status.done {
+  background-color: rgb(100, 226, 100);
+  width: fit-content;
+  border: 1px solid rgb(18, 88, 18);
+  font-size: smaller;
+}
+
+.status.in-progress {
+  background-color: yellow;
+  width: fit-content;
+  border: 1px solid rgb(255, 187, 0);
+  font-size: smaller;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.page-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.active .page-link {
+  background-color: #007bff;
+  color: white;
+}
+
+.mark{
+  font-size: medium;
+  color: rgb(123, 28, 218);
+  cursor: pointer;
+  font-weight: bold;
+}

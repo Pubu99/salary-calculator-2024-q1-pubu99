@@ -1,0 +1,21 @@
+/* ActivityFeed.css */
+.activity-feed {
+    margin-top: 20px;
+  }
+  
+  .activity-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .activity-item p {
+    margin: 0;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .activity-item {
+      padding: 8px 0;
+    }
+  }
+  
