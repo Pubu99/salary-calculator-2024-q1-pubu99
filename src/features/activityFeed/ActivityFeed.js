@@ -1,4 +1,3 @@
-// ActivityFeed.js
 import React from 'react';
 import './ActivityFeed.css';
 
@@ -10,6 +9,7 @@ const ActivityFeed = () => {
 
   return (
     <div className="activity-feed">
+      <h2>Activity Feed</h2>
       {activities.map((activity) => (
         <div key={activity.id} className="activity-item">
           <p>{activity.text}</p>

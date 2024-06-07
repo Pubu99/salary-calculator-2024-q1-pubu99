@@ -1,6 +1,11 @@
 .tasks-by-priority-chart {
-    margin-top: 20px;
-    width: 500px;
-    height: 500px;
-  }
-  
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasks-by-priority-chart h2 {
+  margin-bottom: 20px;
+}
