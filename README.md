@@ -2,6 +2,10 @@
 
 This project was created with React JS
 
+## See the deployed project
+
+My site is live at: https://pubu99.github.io/salary-calculator-2024-q1-pubu99/
+
 ## How to Run the project
 
 In the project directory, you can run:
