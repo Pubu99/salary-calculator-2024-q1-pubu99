@@ -1,20 +1,79 @@
 .activity-feed {
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f9f9f9; 
+  padding: 15px;
+  border-radius: 8px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.activity-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; 
+  padding: 15px;
+  border-radius: 8px; 
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  color: #000000; 
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-icon {
+  font-size: 24px; 
+  margin-right: 10px;
+  color: #007bff; 
+}
+
+.activity-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.activity-item span {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .activity-feed {
+    width: 95%;
   }
-  
+
+  .activity-title {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
   .activity-item {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
+    padding: 8px 0;
   }
-  
+
   .activity-item p {
-    margin: 0;
+    font-size: 0.9rem;
   }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 768px) {
-    .activity-item {
-      padding: 8px 0;
-    }
+
+  .activity-item span {
+    font-size: 0.8rem;
   }
-  
+}

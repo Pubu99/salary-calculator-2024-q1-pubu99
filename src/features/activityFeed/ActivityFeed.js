@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaUser } from 'react-icons/fa';
 import './ActivityFeed.css';
 
 const ActivityFeed = () => {
@@ -9,11 +10,14 @@ const ActivityFeed = () => {
 
   return (
     <div className="activity-feed">
-      <h2>Activity Feed</h2>
+      <h3 className="activity-title">Activity Feed</h3>
       {activities.map((activity) => (
         <div key={activity.id} className="activity-item">
-          <p>{activity.text}</p>
-          <span>{activity.time}</span>
+          <FaUser className="user-icon" />
+          <div className="activity-content">
+            <p>{activity.text}</p>
+            <span>{activity.time}</span>
+          </div>
         </div>
       ))}
     </div>

@@ -8,4 +8,12 @@
 
 .tasks-by-priority-chart h2 {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 60%;
 }

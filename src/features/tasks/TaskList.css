@@ -2,38 +2,44 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  width: 100%;
+  margin: 0 auto;
 }
 
 .task-item {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   margin: 10px 0;
-  padding: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .task-content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  border-bottom: 1px solid ;
-  
 }
 
-.tasks{
+.tasks {
   display: flex;
-  align-items: left;
-  justify-content: start;
-  background-color: #ddd;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 95%;
 }
 
-.cont{
+.cont {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .left-content {
@@ -41,12 +47,14 @@
   align-items: center;
 }
 
-.task-name{
-  font-size: small;
+.task-name {
+  font-size: 1rem;
+  margin-left: 5px;
+  color: #666;
 }
 
 .bell-icon {
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 10px;
 }
 
@@ -55,7 +63,7 @@
 }
 
 .bell-icon.medium {
-  color: yellow;
+  color: orange;
 }
 
 .bell-icon.high {
@@ -64,27 +72,33 @@
 
 .status {
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 4px 10px;
   border-radius: 20px;
+  font-size: 0.9rem;
+  width: fit-content;
+  margin-right: 10px;
 }
 
 .status.done {
-  background-color: rgb(100, 226, 100);
-  width: fit-content;
-  border: 1px solid rgb(18, 88, 18);
-  font-size: smaller;
+  background-color: #d4edda;
+  color: #155724;
 }
 
 .status.in-progress {
-  background-color: yellow;
-  width: fit-content;
-  border: 1px solid rgb(255, 187, 0);
-  font-size: smaller;
+  background-color: #ffeeba;
+  color: #856404;
 }
 
 .right-content {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.date {
+  margin-left: 10px;
+  color: #888;
+  font-size: 0.9rem;
 }
 
 .pagination {
@@ -116,9 +130,11 @@
   color: white;
 }
 
-.mark{
-  font-size: medium;
-  color: rgb(123, 28, 218);
+.mark {
+  font-size: 0.9rem;
+  color: #007bff;
   cursor: pointer;
   font-weight: bold;
+  text-align: left;
+  margin-top: 10px;
 }

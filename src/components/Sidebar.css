@@ -1,4 +1,3 @@
-/* Sidebar.css */
 .sidebar {
     width: 200px;
     background-color: #33074F;
@@ -16,7 +15,13 @@
     margin: 0;
     font-size: 24px;
     margin-bottom: 20px;
-  }
+    justify-content: left;
+    background-color: rgba(240, 240, 240, 0.2); 
+    padding: 15px;
+    border-radius: 8px;
+    width: 90%;
+}
+
   
   .sidebar nav ul {
     list-style: none;
@@ -25,12 +30,15 @@
   
   .sidebar nav ul li {
     margin: 10px 0;
+    
   }
   
   .sidebar nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    justify-content: center;
+    align-items: center;
   }
   
   .sidebar nav ul li.active a {

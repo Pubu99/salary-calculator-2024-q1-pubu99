@@ -40,60 +40,53 @@ const TaskList = () => {
 
   return (
     <>
-    <h3 className='tasks'>Tasks</h3>
-     <div className="task-list">
-      
-      {currentTasks.map((task) => (
-        <div key={task.id} className={`task-item priority-${task.priority.toLowerCase()}`}>
-          <div className="task-content">
-            <div className='cont'>
-            <div className="left-content">
-              <FaBell className={`bell-icon ${task.priority.toLowerCase()}`} />
-              <h3>{task.todo}</h3>
-              <p className='task-name'>{task.name}</p>
+      <h3 className='tasks'>Tasks</h3>
+      <div className="task-list">
+        {currentTasks.map((task) => (
+          <div key={task.id} className={`task-item priority-${task.priority.toLowerCase()}`}>
+            <div className="task-content">
+              <div className="left-content">
+                <FaBell className={`bell-icon ${task.priority.toLowerCase()}`} />
+                <div>
+                  <h4>{task.todo}</h4>
+                  <p className='task-name'>{task.name}</p>
+                </div>
+              </div>
+              <div className="right-content">
+                {task.completed ? (
+                  <p className="status done">Done</p>
+                ) : (
+                  <p className="status in-progress">In Progress</p>
+                )}
+                <p className="date">{formatDate(task.createdAt)}</p>
+              </div>
             </div>
-            <div className="right-content">
-              {task.completed ? (
-                <p className="status done">Done</p>
-              ) : (
-                <p className="status in-progress">In Progress</p>
-              )}
-              &nbsp;
-              <p>{formatDate(task.createdAt)}</p>
-            </div>
-            </div>
-            <div>
             {!task.completed && (
               <p className='mark' onClick={() => handleMarkAsDone(task.id)}>Mark as done</p>
             )}
-            </div>
-            <hr></hr>
           </div>
-         
-        </div>
-      ))}
-      <ReactPaginate
-        previousLabel={'Previous'}
-        nextLabel={'Next'}
-        breakLabel={'...'}
-        pageCount={pageCount}
-        marginPagesDisplayed={2}
-        pageRangeDisplayed={2}
-        onPageChange={handlePageClick}
-        containerClassName={'pagination'}
-        pageClassName={'page-item'}
-        pageLinkClassName={'page-link'}
-        previousClassName={'page-item'}
-        previousLinkClassName={'page-link'}
-        nextClassName={'page-item'}
-        nextLinkClassName={'page-link'}
-        breakClassName={'page-item'}
-        breakLinkClassName={'page-link'}
-        activeClassName={'active'}
-      />
-    </div>
+        ))}
+        <ReactPaginate
+          previousLabel={'Previous'}
+          nextLabel={'Next'}
+          breakLabel={'...'}
+          pageCount={pageCount}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={2}
+          onPageChange={handlePageClick}
+          containerClassName={'pagination'}
+          pageClassName={'page-item'}
+          pageLinkClassName={'page-link'}
+          previousClassName={'page-item'}
+          previousLinkClassName={'page-link'}
+          nextClassName={'page-item'}
+          nextLinkClassName={'page-link'}
+          breakClassName={'page-item'}
+          breakLinkClassName={'page-link'}
+          activeClassName={'active'}
+        />
+      </div>
     </>
-   
   );
 };
 
