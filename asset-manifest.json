@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/salary-calculator-2024-q1-pubu99/static/css/main.9d62b592.css",
+    "main.js": "/salary-calculator-2024-q1-pubu99/static/js/main.58e304e1.js",
+    "index.html": "/salary-calculator-2024-q1-pubu99/index.html",
+    "main.9d62b592.css.map": "/salary-calculator-2024-q1-pubu99/static/css/main.9d62b592.css.map",
+    "main.58e304e1.js.map": "/salary-calculator-2024-q1-pubu99/static/js/main.58e304e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d62b592.css",
+    "static/js/main.58e304e1.js"
+  ]
+}
